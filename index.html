@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clarisse Carmona | Automation Specialist</title>
+  <meta name="description" content="Automation specialist building n8n and GoHighLevel workflows with AI.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="rs">
+  <nav class="rs-side">
+    <div class="rs-top">
+      <div class="rs-brand">Clarisse Carmona</div>
+      <button class="rs-burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="rs-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="rs-links" id="rs-links">
+      <a href="#rs-about">About</a>
+      <a href="#rs-exp">Experience</a>
+      <a href="#rs-proj">Projects</a>
+      <a href="#rs-skills">Skills</a>
+      <a href="#rs-edu">Education</a>
+      <a href="#rs-contact">Contact</a>
+      <div class="rs-mail">Work Email:<br><a href="mailto:clcarmona001@gmail.com">clcarmona001@gmail.com</a></div>
+    </div>
+  </nav>
+
+  <main class="rs-main">
+    <div class="rs-in">
+
+      <section class="rs-sec" id="rs-about">
+        <h1>Clarisse Carmona</h1>
+        <p>Automation specialist building n8n and GoHighLevel workflows with AI. I turn repetitive work into systems that run themselves. I focus on lead capture, AI lead scoring and instant alerts, and I document every build so teams can start using it right away.</p>
+        <a class="rs-btn fill" href="#rs-contact">Contact me</a>
+        <a class="rs-btn" href="assets/Clarisse-Carmona-Resume.pdf" target="_blank" rel="noopener">Download resume</a>
+      </section>
+
+      <section class="rs-sec" id="rs-exp">
+        <h2>Experience</h2>
+        <div class="rs-job">
+          <h3>Software Engineer | Application &amp; Cloud Support Analyst</h3>
+          <div class="rs-meta">Accenture · July 2022 to October 2026</div>
+          <ul>
+            <li>Automated weekly reports, approval requests, ticket updates, data entry and reminders using Microsoft Power Automate.</li>
+            <li>Built flows that connect Outlook, Teams, SharePoint, Excel and Office Scripts to send notifications and route approvals without manual follow-up.</li>
+            <li>Used Microsoft Copilot to draft documentation, reducing the time spent on the task.</li>
+            <li>Fixed failing flow runs by checking run history and correcting connection, permission or data format errors.</li>
+            <li>Documented each flow so teammates could use and maintain it.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="rs-sec" id="rs-proj">
+        <h2>Projects</h2>
+
+        <div class="rs-card">
+          <img src="https://assets.cdn.filesafe.space/xIxEATdFCuEO5WpqrfIh/media/6acc5a0bc478ac5535b65385.png" alt="Lead Intake workflow in n8n" loading="lazy">
+          <h3>Lead Intake and Triage</h3>
+          <p>Validates each lead, adds its region, logs it to Google Sheets and alerts Slack when it is urgent. Built with n8n.</p>
+          <ul>
+            <li>Built a workflow that receives leads by webhook, cleans and validates the data (email check, timestamp, keyword-based priority flag) with a JavaScript Code node.</li>
+            <li>Enriched each lead with its country region through a public REST API, with retry and fallback so the workflow continues when the lookup fails.</li>
+            <li>Logged every lead to Google Sheets and sent instant Slack alerts for urgent leads.</li>
+            <li>Diagnosed and fixed an empty region value caused by a deprecated API endpoint and an incorrect response mapping.</li>
+            <li>Wrote a client guide with setup steps, test cases and troubleshooting.</li>
+          </ul>
+        </div>
+
+        <div class="rs-card">
+          <img src="https://assets.cdn.filesafe.space/xIxEATdFCuEO5WpqrfIh/media/6acc59f74770fb500b00d6bf.png" alt="AI Lead Scoring workflow in n8n" loading="lazy">
+          <h3>AI Lead Scoring for GoHighLevel</h3>
+          <p>Scores new contacts with OpenAI, then writes the summary and score to custom fields and adds a tag. Built with n8n and GHL.</p>
+          <ul>
+            <li>Built a workflow triggered by a GoHighLevel webhook when a new contact is created.</li>
+            <li>Sent the contact's form answers to OpenAI to generate a short lead summary and a hot, warm or cold score.</li>
+            <li>Wrote the summary and score back to GHL custom fields through the API and added a matching tag, so the sales team sees priority at a glance.</li>
+            <li>Authenticated with a Private Integration token and resolved issues with field IDs, request body format and JSON parsing of the AI response.</li>
+            <li>Wrote a client guide covering setup, customization and troubleshooting.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="rs-sec" id="rs-skills">
+        <h2>Skills</h2>
+        <div class="rs-chips">
+          <span class="rs-chip">n8n</span><span class="rs-chip">GoHighLevel</span><span class="rs-chip">OpenAI API</span>
+          <span class="rs-chip">Microsoft Power Automate</span><span class="rs-chip">Microsoft Copilot</span>
+          <span class="rs-chip">Webhooks and REST APIs</span><span class="rs-chip">Google Sheets</span><span class="rs-chip">Slack</span>
+          <span class="rs-chip">Learning: Zapier</span>
+        </div>
+      </section>
+
+      <section class="rs-sec" id="rs-edu">
+        <h2>Education</h2>
+        <h3>BS Mechatronics Engineering</h3>
+        <div class="rs-meta">Batangas State University · 2018-2022</div>
+      </section>
+
+      <section class="rs-sec" id="rs-contact">
+        <h2>Contact</h2>
+        <p>Have a process that eats your week? Let's talk about automating it.</p>
+        <a class="rs-btn fill" href="mailto:clcarmona001@gmail.com">Email me</a>
+        <a class="rs-btn" href="https://www.linkedin.com/in/clarisse-carmona-581aa527b/">LinkedIn</a>
+      </section>
+
+    </div>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
